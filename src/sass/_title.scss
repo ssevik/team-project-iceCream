@@ -1,0 +1,33 @@
+.title {
+  color: $accent;
+
+  font-family: 'Titan One', cursive;
+  font-size: 34px;
+  line-height: 1.147;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+  }
+}
+
+.subtitle {
+  color: $secondary;
+  font-family: 'Titan One', cursive;
+  font-size: 18px;
+  line-height: 1.153;
+  text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+  }
+}

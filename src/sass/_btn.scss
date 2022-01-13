@@ -1,0 +1,22 @@
+.btn {
+  position: relative;
+  padding-right: 37px;
+  padding-left: 37px;
+
+  min-height: 44px;
+
+  color: $accent;
+  background-color: $primary;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.312;
+
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $hover;
+  }
+}
