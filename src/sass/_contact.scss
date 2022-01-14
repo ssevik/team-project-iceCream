@@ -23,7 +23,7 @@
     }
 }
 .contacts_list {
-    width: 180px;
+    width: 223px;
     padding-top: 43px;
     padding-bottom: 18px;
     padding-right: 20px;
@@ -46,7 +46,7 @@
         }
     }
     @media screen and (min-width:1200px) {
-        width: 244px;
+        width: 330px;
         padding-top: 52px;
         padding-bottom: 20px;
         padding-right: 43px;
@@ -61,7 +61,7 @@
     padding-right: 25px;
     padding-left: 25px;
     @include font-contact (500, 12px, 1.37, 0.04em);
-    color: $third;
+    color: $primary;
     background:$brown;
     border-radius: 4px;
     cursor: default;
@@ -101,7 +101,7 @@
 .tabel_title {
     margin-bottom: 10px;
     @include font-contact (500, 12px, 1.37, 0.04em);
-    color: $third;
+    color: $main;
     cursor: default;
     @media screen and (min-width:768px) {
         @include font-contact (500, 14px, 1.85, 0.04em);
@@ -189,7 +189,6 @@
     align-items: center;
     justify-content: center;
     justify-content: space-evenly;
-    width: 161px;
     height: 44px;
     @include font-contact (bold, 16px, 1.31, 0.04em);
     border: none;
@@ -219,7 +218,11 @@
     background-color: $primary;
 }
 .drawing_svg {
+    margin-left: 14px;
     padding-top: 2px;
     width: 7px;
     height: 10px;
+}
+.contact_hidden {
+    display: none;
 }
