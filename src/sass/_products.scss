@@ -1,0 +1,233 @@
+.products-section {
+  padding-top: 121px;
+  padding-bottom: 98px;
+  @media screen and (min-width: 768px) {
+    padding-top: 127px;
+    padding-bottom: 112px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-top: 122px;
+    padding-bottom: 112px;
+  }
+}
+
+.products-subtitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.products-title {
+  text-align: center;
+  margin-bottom: 144px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 150px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 259px;
+  }
+}
+
+.products-list {
+  max-width: 280px;
+  margin-left: auto;
+  margin-right: auto;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    max-width: 700px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 1050px;
+  }
+}
+
+.products-list__item {
+  border-radius: 24px;
+  padding: 161px 40px 41px 40px;
+  margin-bottom: 130px;
+  &:last-child {
+    margin-bottom: 0;
+  }
+  @media screen and (min-width: 768px) {
+    padding: 152px 11px 40px 11px;
+    margin-bottom: 0;
+    margin-right: 20px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 163px 44px 50px 44px;
+    margin-right: 25px;
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.products-list__item--pink {
+  background-color: $lightPink;
+}
+
+.products-list__item--brown {
+  background-color: $brown;
+}
+
+.products-list__item--green {
+  background-color: $green;
+}
+
+.products-list__title {
+  position: relative;
+  font-family: Titan One;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  letter-spacing: 0.04em;
+  text-align: center;
+  text-transform: uppercase;
+  color: $primary;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+  &::after {
+    content: '';
+    width: 100%;
+    height: 6px;
+    background: url(../images/products/points.png) no-repeat center center;
+    margin-top: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    margin-bottom: 32px;
+    &::after {
+      margin-top: 32px;
+    }
+  }
+}
+
+.products-list__title--pink::before {
+  position: absolute;
+  top: -274px;
+  content: '';
+  background: url(../images/products/320px/product-1-320-1x.png) 0 0 no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url(../images/products/320px/product-1-320-2x.png);
+  }
+  width: 249px;
+  height: 252px;
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/768px/product-1-768-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/768px/product-1-768-2x.png);
+    }
+    top: -256px;
+    width: 220px;
+    height: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    background: url(../images/products/1200px/product-1-1200-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/1200px/product-1-1200-2x.png);
+    }
+    top: -373px;
+    width: 335px;
+    height: 335px;
+  }
+}
+
+.products-list__title--brown::before {
+  position: absolute;
+  top: -274px;
+  content: '';
+  background: url(../images/products/320px/product-2-320-1x.png) 0 0 no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url(../images/products/320px/product-2-320-2x.png);
+  }
+  width: 249px;
+  height: 252px;
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/768px/product-2-768-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/768px/product-2-768-2x.png);
+    }
+    top: -256px;
+    width: 220px;
+    height: 232px;
+  }
+  @media screen and (min-width: 1200px) {
+    background: url(../images/products/1200px/product-2-1200-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/1200px/product-2-1200-2x.png);
+    }
+    top: -373px;
+    width: 335px;
+    height: 335px;
+  }
+}
+
+.products-list__title--green::before {
+  position: absolute;
+  top: -274px;
+  content: '';
+  background: url(../images/products/320px/product-3-320-1x.png) 0 0 no-repeat;
+  @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+    background: url(../images/products/320px/product-3-320-2x.png);
+  }
+  width: 249px;
+  height: 252px;
+  @media screen and (min-width: 768px) {
+    background: url(../images/products/768px/product-3-768-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/768px/product-3-768-2x.png);
+    }
+    top: -256px;
+    width: 220px;
+    height: 226px;
+  }
+  @media screen and (min-width: 1200px) {
+    background: url(../images/products/1200px/product-3-1200-1x.png) 0 0 no-repeat;
+    @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+      background: url(../images/products/1200px/product-3-1200-2x.png);
+    }
+    top: -373px;
+    width: 335px;
+    height: 335px;
+  }
+}
+
+.products-list__text {
+  font-family: DM Sans;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: $primary;
+  margin-bottom: 30px;
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+    line-height: 1.78;
+    margin-bottom: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.75;
+    margin-bottom: 62px;
+  }
+}
+
+.products-list__btn {
+  width: 40px;
+  height: 40px;
+  border: 1px solid transparent;
+  border-radius: 50%;
+  background: url(../images/products/arrow-right.jpg) no-repeat center center;
+  cursor: pointer;
+  display: block;
+  margin: 0 auto;
+}
