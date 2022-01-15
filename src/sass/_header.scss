@@ -39,8 +39,6 @@
             }
         }
 
-
-
         @media screen and (max-width: 1199px) {
             display: none;
         }
@@ -107,8 +105,6 @@
             width: 277px;
             margin-bottom: 112px;
         }
-
-        position: relative;
     }
 
     &__title {
@@ -149,8 +145,9 @@
             }
         }
     }
-    
+
     &__button {
+
         display: flex;
 
         &--item:first-child {
@@ -166,22 +163,19 @@
         }
 
         &--products, &--technology {
-            cursor: pointer;
                 height: 24px;
                 border-radius: 22px;
             
                 font-weight: 400;
                 font-size: 8px;
                 line-height: 1.25;
-            
-                cursor: pointer;
 
                 @media screen and (min-width: 1200px) {
                     font-size: 14px;
                     height: 40px;
                 }
-
         }
+        
         &--products {
             background-color: $accent;
             color: $primary;
@@ -193,7 +187,7 @@
             }
 
             &:hover, &:focus {
-                background-color: #C7133E;
+                background-color: $accenthover;
             }
 
         }
@@ -211,7 +205,6 @@
                 background-color: $hover;
             }
         }
-
     }
 
     &__info {
@@ -245,7 +238,6 @@
                 font-size: 14px;
                 margin-bottom: 20px;
             }
-
         }
 
         &--link {
