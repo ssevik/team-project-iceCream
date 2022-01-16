@@ -82,11 +82,12 @@
 
         @media screen and (min-width: 768px) {
             padding-top: 15px;
-            padding-bottom: 34px;
+            padding-bottom: 33px;
         }
         
         @media screen and (min-width: 1200px) {
-            padding-top: 81px;
+            padding-top: 83px;
+            padding-bottom: 56px;
         }
 
     position: relative;
@@ -210,11 +211,10 @@
 
     &__info {
 
-            margin-left: 120px;
-
             @media screen and (max-width: 767px) {
                 display: none;
             }
+        margin-left: 120px;
 
             @media screen and (min-width: 1200px) {
                 margin-left: 180px;
@@ -324,25 +324,50 @@
 }
 
 
-.hero_header_wrap {
+.header__hero--wrap {
 
     @extend .container;
 
-    background-image: url(../images/header+hero/icecream_2x-min.png), 
-        url(../images/header+hero/ellipse-min_2x.png);
+    background-image: 
+        url(../images/header+hero/icecream-min.png), 
+        url(../images/header+hero/ellipse-min.png);
         background-size: 171px 410px, 346px 344px;
         background-repeat: no-repeat;
         background-position: 117px bottom, 36px 83px;
 
+        @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .box {
+                background-image: 
+                url(../images/header+hero/icecream_2x-min.png), 
+                url(../images/header+hero/ellipse-min_2x.png);
+            }
+        }
+
     @media screen and (min-width: 768px) {
         background-image: 
-        url(../images/header+hero/icecream_2x-min.png),
-        url(../images/header+hero/milk_2x-min.png),
-        url(../images/header+hero/lady_2x-min.png),
-        url(../images/header+hero/ellipse-min_2x.png);
+        url(../images/header+hero/icecream-min.png),
+        url(../images/header+hero/milk-min.png),
+        url(../images/header+hero/lady-min.png),
+        url(../images/header+hero/ellipse-min.png);
         background-size: 143px 336px, 124px 126px, 168px 133px, 324px 322px;
         background-position: 378px bottom, left 34px bottom 28px,
                 566px bottom, 307px 31px;
+
+                @media (min-device-pixel-ratio: 2),
+            (-webkit-min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .box {
+                background-image: 
+                url(../images/header+hero/icecream_2x-min.png),
+                url(../images/header+hero/milk_2x-min.png),
+                url(../images/header+hero/lady_2x-min.png),
+                url(../images/header+hero/ellipse-min_2x.png);
+            }
+        }
     }
     
     @media screen and (min-width: 1200px) {
