@@ -3,6 +3,7 @@
 @import './normalize';
 @import './reset';
 @import './general';
+@import './mixin';
 
 //components
 @import './title';
@@ -11,3 +12,8 @@
 //layouts
 @import './header';
 @import './mobile-menu';
+@import './products';
+@import './form';
+@import './about';
+@import './advantages';
+@import './contacts';
