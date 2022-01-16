@@ -9,6 +9,10 @@
     padding-bottom: 66px;
   }
 
+  &__section {
+    position: relative;
+  }
+
   &__top-box {
     display: flex;
     flex-direction: column;
@@ -123,10 +127,15 @@
     width: 100vw;
 
     left: 0;
-    bottom: -4%;
+    bottom: 10%;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: none;
+    }
+
+    @media screen and (max-width: 1200px) {
+      left: 0;
+      bottom: -14%;
     }
   }
 }
