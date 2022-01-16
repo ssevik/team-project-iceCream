@@ -194,7 +194,7 @@
     width: 100vw;
 
     left: 0;
-    bottom: 10%;
+    bottom: 12%;
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
       display: none;
@@ -202,7 +202,7 @@
 
     @media screen and (min-width: 1200px) {
       left: 0;
-      bottom: -14%;
+      bottom: 0%;
     }
   }
 }
