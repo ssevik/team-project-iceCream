@@ -3,14 +3,12 @@
   padding-bottom: 39px;
 
   background: #fff5f6;
+  
+  position: relative;
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     padding-top: 130px;
     padding-bottom: 66px;
-  }
-
-  &__section {
-    position: relative;
   }
 
   &__top-box {
