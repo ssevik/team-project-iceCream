@@ -8,17 +8,15 @@
 }
 
 .advantages__list {
-  list-style: none;
-  text-decoration: none;
-
   @media screen and (min-width: 768px) {
     display: flex;
-    flex-wrap: wrap;
+
     column-gap: 60px;
   }
 
   @media screen and (min-width: 1200px) {
     column-gap: 30px;
+    justify-content: center;
   }
 }
 
@@ -28,7 +26,7 @@
   max-width: 230px;
 
   @media screen and (min-width: 768px) {
-    max-width: 180px;
+    min-width: 180px;
     padding-top: 86px;
   }
 
