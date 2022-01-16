@@ -1,0 +1,17 @@
+.gallery{
+    background-size: cover;
+    background-image: linear-gradient(
+        to bottom,
+        #FFF5F6 31%,
+        #FFFFFF 31%,
+    );
+    @media screen and (min-width: 320px) and (max-width: 767px){
+        padding-bottom: 80px;
+    }
+    @media screen and (min-width: 768px){
+        padding-bottom: 121px; 
+    }
+    @media screen and (min-width: 1200px){
+        padding-bottom: 123px; 
+    }
+}
