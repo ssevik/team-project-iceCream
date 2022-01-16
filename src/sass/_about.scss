@@ -90,6 +90,14 @@
     min-width: 220px;
   }
 
+  .btn__svg {
+    margin-left: 10px;
+    width: 7px;
+    height: 10px;
+    fill: none;
+    stroke: currentColor;
+  }
+
   &__bottom-btn {
     position: relative;
     padding-right: 37px;
@@ -109,13 +117,10 @@
     cursor: pointer;
 
     box-shadow: inset 0 0 0 0 $hover;
-    // -webkit-transition: ease-out 0.5s;
-    // -moz-transition: ease-out 0.5s;
     transition: ease-out 0.4s;
 
     &:hover,
     &:focus {
-      // background-color: $hover;
       box-shadow: inset 0 0 0 50px $hover;
     }
 
@@ -128,7 +133,6 @@
   .btn:visited {
     padding: 15px 40px;
     display: inline-block;
-    // border-radius: 100px;
     transition: all 0.2s;
     position: absolute;
   }
@@ -136,12 +140,12 @@
   .btn:focus,
   .btn:hover {
     transform: translateY(-3px);
-    box-shadow: 0 10px 20px rgba(212, 20, 67, 1);
+    box-shadow: 0 10px 20px $accent;
   }
 
   .btn:active {
     transform: translateY(-1px);
-    box-shadow: 0 5px 10px rgba(212, 20, 67, 1);
+    box-shadow: 0 5px 10px $accent;
   }
 
   .btn::after {
@@ -158,7 +162,7 @@
   }
 
   .btn-white::after {
-    background-color: #fff;
+    background-color: $primary;
   }
 
   .btn:hover::after {

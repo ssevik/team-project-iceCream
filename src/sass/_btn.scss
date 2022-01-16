@@ -27,3 +27,95 @@
     background-color: $hover;
   }
 }
+
+// !Белая кнопка, красная тень(серый бэкграунд). ВНИМАТЕЛЬНО СМОТРИТЕ font-size.
+// ! btn btn-white btn-animate
+
+.btn {
+  position: relative;
+  padding-right: 37px;
+  padding-left: 37px;
+
+  min-height: 44px;
+  min-width: 176px;
+
+  color: $accent;
+  background-color: $primary;
+  border-radius: 22px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.285;
+
+  cursor: pointer;
+
+  box-shadow: inset 0 0 0 0 $hover;
+  transition: ease-out 0.4s;
+
+  &:hover,
+  &:focus {
+    box-shadow: inset 0 0 0 50px $hover;
+  }
+
+  @media screen and (min-width: 768px) {
+    font-size: 16px;
+  }
+}
+
+.btn:link,
+.btn:visited {
+  padding: 15px 40px;
+  display: inline-block;
+  transition: all 0.2s;
+  position: absolute;
+}
+
+.btn:focus,
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px $accent;
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px $accent;
+}
+
+.btn::after {
+  content: '';
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+  border-radius: 100px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.4s;
+}
+
+.btn-white::after {
+  background-color: $primary;
+}
+
+.btn:hover::after {
+  transform: scaleX(1.4) scaleY(1.6);
+  opacity: 0;
+}
+
+.btn-animated {
+  animation: moveInBottom 5s ease-out;
+  animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
