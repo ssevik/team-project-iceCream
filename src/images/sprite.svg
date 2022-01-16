@@ -2,6 +2,11 @@
   xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
   <defs>
 
+    <symbol id="arrow" viewBox="0 0 22 32">
+      <path stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="6.4"
+        d="M5.575 3.2l12.88 12.8-12.88 12.8"></path>
+    </symbol>
+
     <symbol id="icon-burger-open" viewBox="0 0 32 32">
       <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 6.4h32"></path>
       <path stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" stroke-width="1.6" d="M0 16h32"></path>
