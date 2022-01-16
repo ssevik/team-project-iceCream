@@ -3,6 +3,7 @@
 @import './normalize';
 @import './reset';
 @import './general';
+@import './mixin';
 
 //components
 @import './title';
@@ -11,6 +12,9 @@
 //layouts
 @import './header';
 
+@import './contacts';
+
+
 
 @import './form';
 
@@ -18,4 +22,5 @@
 
 
 @import './advantages';
+
 
