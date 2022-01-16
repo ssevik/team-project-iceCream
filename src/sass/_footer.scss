@@ -1,6 +1,9 @@
 .footer {
   background-color: #fff5f6;
   padding-bottom: 25px;
+  @media screen and (min-width: 768px) {
+    padding-bottom: 18px;
+  }
   @media screen and (min-width: 1200px) {
     padding-bottom: 10px;
   }
@@ -33,13 +36,12 @@
 .footer__social-list {
   display: flex;
   justify-content: flex-end;
-  margin-right: -28px;
   margin-bottom: 46px;
   @media screen and (min-width: 1200px) {
     margin-bottom: 50px;
   }
 }
-.footer__social-item {
+.footer__social-item:not(:last-child) {
   margin-right: 28px;
 }
 .footer__social-pic {
@@ -53,6 +55,10 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+  &:hover,
+  &:focus {
+    background-color: $accent;
+  }
 }
 .footer__contact {
   display: flex;
@@ -79,7 +85,9 @@
   text-align: center;
   color: $third;
   @media screen and (min-width: 768px) {
-    margin-right: 3px;
+    &:not(:last-child) {
+      margin-right: 3px;
+    }
   }
 }
 .footer__privacy::before {
@@ -105,6 +113,5 @@
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;
-    margin-right: -3px;
   }
 }
