@@ -1,5 +1,4 @@
 .btn {
-  position: relative;
   padding-right: 37px;
   padding-left: 37px;
 
@@ -14,6 +13,14 @@
   line-height: 1.312;
 
   cursor: pointer;
+
+  &__svg {
+    margin-left: 10px;
+    width: 7px;
+    height: 10px;
+    fill: none;
+    stroke: currentColor;
+  }
 
   &:hover,
   &:focus {
