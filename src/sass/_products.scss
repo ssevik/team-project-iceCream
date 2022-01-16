@@ -7,7 +7,7 @@
   }
   @media screen and (min-width: 1200px) {
     padding-top: 122px;
-    padding-bottom: 112px;
+    padding-bottom: 119px;
   }
 }
 
@@ -79,12 +79,10 @@
 .products-list__title {
   position: relative;
   font-family: Titan One;
-  font-style: normal;
   font-weight: 400;
   font-size: 20px;
   line-height: 1.15;
   letter-spacing: 0.04em;
-  text-align: center;
   text-transform: uppercase;
   color: $primary;
   display: flex;
@@ -116,6 +114,7 @@
   background: url(../images/products/320px/product-1-320-1x.png) 0 0 no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background: url(../images/products/320px/product-1-320-2x.png);
+    background-size: cover;
   }
   width: 249px;
   height: 252px;
@@ -123,6 +122,7 @@
     background: url(../images/products/768px/product-1-768-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/768px/product-1-768-2x.png);
+      background-size: cover;
     }
     top: -256px;
     width: 220px;
@@ -132,6 +132,7 @@
     background: url(../images/products/1200px/product-1-1200-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/1200px/product-1-1200-2x.png);
+      background-size: cover;
     }
     top: -373px;
     width: 335px;
@@ -146,6 +147,7 @@
   background: url(../images/products/320px/product-2-320-1x.png) 0 0 no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background: url(../images/products/320px/product-2-320-2x.png);
+    background-size: cover;
   }
   width: 249px;
   height: 252px;
@@ -153,6 +155,7 @@
     background: url(../images/products/768px/product-2-768-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/768px/product-2-768-2x.png);
+      background-size: cover;
     }
     top: -256px;
     width: 220px;
@@ -162,6 +165,7 @@
     background: url(../images/products/1200px/product-2-1200-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/1200px/product-2-1200-2x.png);
+      background-size: cover;
     }
     top: -373px;
     width: 335px;
@@ -176,6 +180,7 @@
   background: url(../images/products/320px/product-3-320-1x.png) 0 0 no-repeat;
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background: url(../images/products/320px/product-3-320-2x.png);
+    background-size: cover;
   }
   width: 249px;
   height: 252px;
@@ -183,6 +188,7 @@
     background: url(../images/products/768px/product-3-768-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/768px/product-3-768-2x.png);
+      background-size: cover;
     }
     top: -256px;
     width: 220px;
@@ -192,6 +198,7 @@
     background: url(../images/products/1200px/product-3-1200-1x.png) 0 0 no-repeat;
     @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
       background: url(../images/products/1200px/product-3-1200-2x.png);
+      background-size: cover;
     }
     top: -373px;
     width: 335px;
@@ -200,8 +207,6 @@
 }
 
 .products-list__text {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.5;
@@ -226,7 +231,7 @@
   height: 40px;
   border: 1px solid transparent;
   border-radius: 50%;
-  background: url(../images/products/arrow-right.jpg) no-repeat center center;
+  background: url(../images/products/arrow-right.png) no-repeat center center;
   cursor: pointer;
   display: block;
   margin: 0 auto;
