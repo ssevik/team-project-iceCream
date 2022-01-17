@@ -28,13 +28,16 @@
     column-gap: 35px;
 
     &--link {
+      display: inline-block;
       color: $primary;
       padding-top: 10px;
       padding-bottom: 10px;
+      transition: transform 200ms ease-in-out;
 
       &:hover,
       &:focus {
         color: $accent;
+        transform: scale(1.3);
       }
     }
 
