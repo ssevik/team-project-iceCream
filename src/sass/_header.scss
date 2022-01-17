@@ -56,6 +56,10 @@
     }
   }
 
+  .header__menu--link:hover {
+    transform: scale(1.4);
+  }
+
   &__btn {
     @extend .btn;
     @media screen and (max-width: 767px) {
