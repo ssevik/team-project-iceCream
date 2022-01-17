@@ -1,4 +1,6 @@
 .footer {
+  position: relative;
+
   background-color: #fff5f6;
   padding-bottom: 25px;
   @media screen and (min-width: 768px) {
@@ -92,24 +94,23 @@
 }
 .footer__privacy::before {
   content: '';
-  width: 100vw;
+
   height: 1px;
   background-color: #e1e1e1;
   display: block;
   position: absolute;
-  top: -22px;
-  left: -20px;
+  right: 0;
+  left: 0;
+  bottom: 89px;
+
   @media screen and (min-width: 768px) {
-    top: -29px;
-    left: -34px;
+    bottom: 73px;
   }
   @media screen and (min-width: 1200px) {
-    top: -9px;
-    left: -75px;
+    bottom: 45px;
   }
 }
 .footer__privacy {
-  position: relative;
   @media screen and (min-width: 768px) {
     display: flex;
     justify-content: center;

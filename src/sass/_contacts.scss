@@ -1,9 +1,17 @@
 .contact {
+  padding-bottom: 113px;
+
   @media screen and (min-width: 320px) {
     background-image: linear-gradient(to top, #fff5f6 94%, #ffffff 6%);
   }
   @media screen and (min-width: 768px) {
     background-image: linear-gradient(to top, #fff5f6 86%, #ffffff 14%);
+
+    padding-bottom: 158px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 165px;
   }
 }
 .contact_item {
@@ -58,7 +66,7 @@
   color: $primary;
   background: $brown;
   border-radius: 4px;
-  cursor: default;
+
   @media screen and (min-width: 768px) {
     padding-top: 8px;
     padding-bottom: 8px;
@@ -96,7 +104,7 @@
   margin-bottom: 10px;
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $main;
-  cursor: default;
+
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.85, 0.04em);
   }
@@ -117,7 +125,7 @@
 .tabel_text {
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $third;
-  cursor: default;
+
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.64, 0.04em);
   }
@@ -130,7 +138,7 @@
   margin-top: 10px;
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $main;
-  cursor: default;
+
   @media screen and (min-width: 768px) {
     margin-top: 16px;
     @include font-contact(500, 14px, 1.85, 0.04em);
@@ -163,24 +171,24 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
   padding-top: 54px;
-  padding-bottom: 54px;
+
   @media screen and (min-width: 768px) {
     flex-direction: row;
     justify-content: center;
+    column-gap: 15px;
+
     padding-top: 81px;
-    padding-bottom: 81px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 86px;
-    padding-bottom: 86px;
   }
 }
+
 .drawing_btn {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  justify-content: space-evenly;
+  max-width: 161px;
   height: 44px;
   @include font-contact(bold, 16px, 1.31, 0.04em);
   border: none;
@@ -189,10 +197,14 @@
   @media screen and (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
+
+    max-width: 200px;
   }
   @media screen and (min-width: 1200px) {
     padding-left: 35px;
     padding-right: 35px;
+
+    max-width: 208px;
   }
 }
 .drawing_btn--left {
@@ -200,9 +212,6 @@
   background-color: $accent;
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
-  }
-  @media screen and (min-width: 768px) {
-    margin-right: 15px;
   }
 }
 .drawing_btn--right {
