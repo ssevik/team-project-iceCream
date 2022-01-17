@@ -56,9 +56,7 @@
     }
   }
 
-  .header__menu--link:hover {
-    transform: scale(1.4);
-  }
+
 
   &__btn {
     @extend .btn;
@@ -107,21 +105,13 @@
 
   &__title {
     color: $primary;
+
     font-family: 'Titan One', cursive;
     font-size: 26px;
     line-height: 1.147;
     letter-spacing: 0.04em;
     text-transform: uppercase;
-        @media screen and (min-width: 768px) {
-            width: 162px;
-            margin-bottom: 121px;
-        }
-        
-        @media screen and (min-width: 1200px) {
-            width: 277px;
-            margin-bottom: 210px;
-        }
-    }
+
     @media screen and (min-width: 768px) {
       font-size: 22px;
       line-height: 1.13;
@@ -264,65 +254,6 @@
   &__statistics {
     @media screen and (max-width: 767px) {
       display: none;
-        &--summary {
-            cursor: pointer;
-            list-style: none;
-        }
-
-        &--summary::before {
-            content: '';
-            background-image: url(../images/header+hero/arrow-right.png);
-            background-size: cover;
-            display: block;
-            width: 18px; height: 18px;
-
-            transition: ease-out 0.5s;
-
-            @media screen and (min-width: 1200px) {
-                width: 26px; height: 26px;
-            }
-        }
-
-        &--details[open] &--summary::before {
-            content: '';
-            background-image: url(../images/header+hero/arrow-right.png);
-            background-size: cover;
-            transform: rotate(-90deg);
-            display: block;
-            width: 18px; height: 18px;
-
-            transition: ease-out 0.5s;
-
-            @media screen and (min-width: 1200px) {
-                width: 26px; height: 26px;
-            }
-        }
-
-        &--details[open] &--content {
-
-            transform: translate(0, -73px);
-            width: 107px;
-            font-weight: 400;
-            font-size: 8px;
-            line-height: 1.5;
-            letter-spacing: 0;
-            color: $primary;
-            position: absolute;
-
-            @media screen and (min-width: 1200px) {
-                transform: translate(0, -124px);
-                width: 200px;    
-                font-size: 14px;
-            }      
-        }
-
-        &--details[open] &--content {
-            animation: slide ease-out 1s;
-        }
-            @keyframes slide {
-            0%    { opacity: 0; }
-            100%  { opacity: 1; }
-        }
     }
 
     position: absolute;
@@ -390,7 +321,7 @@
       }
     }
   }
-
+}
 
 .header__hero--wrap {
   @extend .container;
@@ -431,3 +362,4 @@
     background-position: 554px bottom, left 37px bottom 45px, 838px bottom, 435px 52px;
   }
 }
+
