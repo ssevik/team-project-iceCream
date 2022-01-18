@@ -1,0 +1,135 @@
+.reviews {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-bottom: 86px;
+    background-color: $primary;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 123px;
+    background-color: $primary;
+  }
+}
+.reviews__content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reviews__img {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    padding-bottom: 29px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-bottom: 19px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 15px;
+  }
+}
+.reviews__item {
+  position: relative;
+  background-color: #fafafa;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    min-width: 280px;
+    min-height: 308px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    padding-right: 36px;
+    padding-left: 60px;
+    min-width: 620px;
+    min-height: 164px;
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 926px;
+    min-height: 138px;
+    padding-right: 54px;
+    padding-left: 59px;
+  }
+}
+.reviews_item__text {
+  text-align: center;
+  margin: 0 auto;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    max-width: 157px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 460px;
+  }
+  @media screen and (min-width: 1200px) {
+    max-width: 750px;
+  }
+}
+.reviews__link {
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    margin: 0 auto;
+    max-width: 180px;
+    line-height: 31px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 30px,
+      #e1e1e1 31px
+    );
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    max-width: 524px;
+    line-height: 31px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent,
+      transparent 29px,
+      #e1e1e1 30px
+    );
+  }
+  @media screen and (min-width: 1200px) {
+    min-width: 822px;
+    min-height: 74px;
+    line-height: 31px;
+    background-image: repeating-linear-gradient(
+      180deg,
+      transparent -2px,
+      transparent 29.5px,
+      #e1e1e1 30.5px
+    );
+  }
+}
+.reviews__text {
+  position: relative;
+  z-index: 5;
+  margin-top: 47px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    font-size: 12px;
+    margin-top: 43px;
+    line-height: calc(31 / 12);
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    font-size: 14px;
+    line-height: calc(30 / 14);
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
+}
+.svg__quotes {
+  width: 54px;
+  height: 40px;
+  @media screen and (min-width: 320px) and (max-width: 767px) {
+    position: absolute;
+    top: 28px;
+    left: 61px;
+  }
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    position: absolute;
+    top: 30px;
+    left: 40px;
+  }
+  @media screen and (min-width: 1200px) {
+    position: absolute;
+    top: 32px;
+    left: 50px;
+  }
+}
+.reviews__title {
+  line-height: calc(37 / 20);
+  text-align: center;
+  color: $main;
+}
