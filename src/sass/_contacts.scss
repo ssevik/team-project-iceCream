@@ -207,14 +207,36 @@
     max-width: 208px;
   }
 }
+
 .drawing_btn--left {
+  padding: 0 10px;
+
   color: $primary;
   background-color: $accent;
+
   @media screen and (max-width: 767px) {
     margin-bottom: 10px;
   }
+
+  @media screen and (min-width: 768px) {
+    padding: 0px 26px;
+    max-width: 191px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 30px;
+    max-width: 198px;
+  }
 }
+
 .drawing_btn--right {
+  padding: 0 28px;
+
   color: $accent;
   background-color: $primary;
+
+  @media screen and (min-width: 1200px) {
+    padding: 0px 38px;
+    max-width: 180px;
+  }
 }

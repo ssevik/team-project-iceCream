@@ -33,24 +33,42 @@
 
   border-radius: 5px;
   background: linear-gradient(45deg, #ffb8ca, #e17992);
-  // background: linear-gradient(180deg, blue, yellow);
   box-shadow: 0 0 13px 3px rgba(0, 0, 0, 0.5);
   border-radius: 4px;
 
   z-index: 10001;
-
-  // @media screen and (max-width: 767px) {
-  //   display: none;
-  // }
 }
 
-.btn-close {
-  position: absolute;
-  top: 10px;
-  right: 10px;
+.modal__icon-btn {
+  color: currentColor;
+  fill: $gray;
+
+  display: inline-block;
 
   width: 15px;
   height: 15px;
+
+  &:focus,
+  &:hover {
+    fill: $accenthover;
+  }
+}
+
+.modal__close-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  border: 1px solid transparent;
+  background-color: transparent;
+  border-radius: 50%;
+
+  width: 25px;
+  height: 25px;
 }
 
 .modal__btn {

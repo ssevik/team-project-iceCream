@@ -1,10 +1,9 @@
-<!-- <a href="#" class="overlay" id="#form1"></a> -->
 <div class="backdrop is-hidden" data-modal>
   <div class="modal modal__container">
-    <button type="button" class="btn-close" data-modal-close>
-      <!-- <svg class="icon-btn">
-        <use href="./image/sprite.svg#icon-X"></use>
-      </svg> -->
+    <button type="button" class="modal__close-btn" data-modal-close>
+      <svg class="modal__icon-btn">
+        <use href="./images/sprite.svg#icon-x"></use>
+      </svg>
     </button>
     <form class="modal__form">
       <input class="modal__name input" name="name" placeholder="Enter your name:" required />
@@ -21,7 +20,7 @@
         placeholder="Enter your message:"
         required
       ></textarea>
-      <button class="modal__btn btn" type="submit">
+      <button class="modal__btn btn btn--white btn-white btn-animate" type="submit">
         Send
         <svg class="btn__svg">
           <use href="./images/sprite.svg#arrow"></use>
