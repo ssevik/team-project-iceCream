@@ -46,6 +46,7 @@
   border-radius: 24px;
   padding: 161px 40px 41px 40px;
   margin-bottom: 130px;
+  position: relative;
   &:last-child {
     margin-bottom: 0;
   }
@@ -228,13 +229,82 @@
   }
 }
 
-.products-list__btn {
+.products-list__button {
+  cursor: pointer;
+  list-style: none;
+  &::before {
+    content: '';
+    width: 40px;
+    height: 40px;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    background: url('../images/products/arrow-right.png') no-repeat center center;
+    display: block;
+    margin: 0 auto;
+
+    transition: ease-out 2s;
+  }
+}
+
+.products-list__details[open] .products-list__button::before {
+  content: '';
   width: 40px;
   height: 40px;
   border: 1px solid transparent;
   border-radius: 50%;
-  background: url(../images/products/arrow-right.png) no-repeat center center;
-  cursor: pointer;
-  display: block;
-  margin: 0 auto;
+  background: url('../images/products/arrow-right.png') no-repeat center center;
+  transform: rotate(-90deg);
+
+  transition: ease-out 2s;
+}
+
+.products-list__details[open] .products-list__wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80%;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0) 13%,
+    rgba(255, 255, 255, 1) 79%
+  );
+  border-radius: 24px;
+  padding: 50px;
+
+  animation-name: slide;
+  animation-duration: 3s;
+  animation-timing-function: linear;
+  animation-direction: alternate-reverse;
+
+  @media screen and (min-width: 768px) {
+    padding: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px;
+  }
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.products-list__wrapper-text {
+  font-weight: 700;
+  font-size: 11px;
+  line-height: 1.5;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #3a3a3a;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 15px;
+  }
 }
