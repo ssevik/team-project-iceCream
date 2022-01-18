@@ -1,13 +1,25 @@
 <section class="about">
   <div class="about__section container">
     <div class="about__top-box">
-      <p class="about__top-text subtitle" data-aos="fade-up" data-aos-delay="400">
+      <p
+        class="about__top-text subtitle"
+        data-aos="fade-up"
+        data-aos-delay="150"
+        data-aos-duration="800"
+      >
         tradition and love
       </p>
-      <h2 class="about__top-title title" data-aos="fade-up" data-aos-delay="550">how it’s made?</h2>
+      <h2
+        class="about__top-title title"
+        data-aos="fade-up"
+        data-aos-delay="250"
+        data-aos-duration="800"
+      >
+        how it’s made?
+      </h2>
     </div>
     <div class="about__bottom-box">
-      <picture data-aos="fade-right" data-aos-delay="750">
+      <picture data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="600">
         <source
           srcset="
             ./images/about/desktop-cow-1x.png 1x,
@@ -34,7 +46,12 @@
         />
         <img src="./images/about/about-cow.png" alt="Cow with milk" />
       </picture>
-      <div class="about__text-box" data-aos="fade-left" data-aos-delay="750">
+      <div
+        class="about__text-box"
+        data-aos="fade-up"
+        data-aos-anchor-placement="center-bottom"
+        data-aos-duration="600"
+      >
         <div class="about__box-text">
           <p class="about__bottom-text top-text">
             Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo cursus, faucibus
@@ -47,12 +64,16 @@
             orci in imperdiet placerat. Vestibulum euismod nisl suscipit ligula volutpat, a feugiat
             urna maximus. Cras massa nibh, tincidunt.
 
-            <!-- ?margin -->
             <span class="about__text-span">Aliquam erat volutpat. Aenean accumsan.</span>
           </p>
         </div>
         <div class="about__box-btn">
-          <button class="about__bottom-btn" type="button">Read More</button>
+          <button class="about__bottom-btn btn btn-white btn-animate" type="button">
+            Read More
+            <svg class="btn__svg">
+              <use href="./images/sprite.svg#arrow"></use>
+            </svg>
+          </button>
         </div>
       </div>
       <picture>
@@ -72,7 +93,7 @@
           "
           media="(min-width: 320px)"
         />
-        <img class="about__bottom-img" src="./images/about/about-milk.png" alt="Cow with milk" />
+        <img class="about__bottom-img" src="./images/about/about-milk.png" alt="Milk" />
       </picture>
     </div>
   </div>
