@@ -10,7 +10,6 @@
 .advantages__list {
   @media screen and (min-width: 768px) {
     display: flex;
-
     column-gap: 60px;
   }
 
@@ -22,67 +21,59 @@
 
 .advantages__item {
   position: relative;
-  padding-top: 66px;
   max-width: 230px;
+  padding-top: 66px;
 
   @media screen and (min-width: 768px) {
-    min-width: 180px;
+    max-width: 180px;
     padding-top: 86px;
+    margin-bottom: 0;
   }
 
   @media screen and (min-width: 1200px) {
-    padding-top: 90px;
     max-width: 330px;
+    padding-top: 90px;
   }
 }
 
 .advantages__item:not(:last-child) {
   margin-bottom: 38px;
-
-  @media screen and (min-width: 768px) {
-    margin-bottom: 0;
-  }
 }
 
 .advantages__numb {
-  font-family: Titan One;
-  font-style: normal;
-  font-weight: normal;
+  margin-bottom: 16px;
+  font-family: Titan One, cursive;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
   color: $accent;
-  margin-bottom: 16px;
 
   @media screen and (min-width: 768px) {
+    margin-bottom: 13px;
     font-size: 48px;
     line-height: 1.15x;
-    margin-bottom: 13px;
   }
 
   @media screen and (min-width: 1200px) {
+    margin-bottom: 15px;
     font-size: 58px;
     line-height: 1.14;
-    margin-bottom: 15px;
   }
 }
 
-.advantages__numb {
-  margin-bottom: 16px;
-}
-
 .advantages__numb--first::before {
-  content: '';
-  width: 33px;
-  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
+  content: '';
+  width: 33px;
+  height: 50px;
   background-image: url(../images/advantages/icon1-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/advantages/icon1-2x.png);
     background-repeat: no-repeat;
@@ -92,16 +83,17 @@
 }
 
 .advantages__numb--second::before {
-  content: '';
-  width: 50px;
-  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
+  content: '';
+  width: 50px;
+  height: 50px;
   background-image: url(../images/advantages/icon2-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/advantages/icon2-2x.png);
     background-repeat: no-repeat;
@@ -111,16 +103,17 @@
 }
 
 .advantages__numb--third::before {
-  content: '';
-  width: 44px;
-  height: 50px;
   position: absolute;
   top: 0;
   left: 0;
+  content: '';
+  width: 44px;
+  height: 50px;
   background-image: url(../images/advantages/icon3-1x.png);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+
   @media (min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
     background-image: url(../images/advantages/icon3-2x.png);
     background-repeat: no-repeat;
@@ -130,8 +123,6 @@
 }
 
 .advantages__text {
-  font-family: DM Sans;
-  font-style: normal;
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
@@ -145,8 +136,6 @@
   @media screen and (min-width: 1200px) {
     font-size: 16px;
     line-height: 1.13;
-    letter-spacing: 0.02em;
-    font-size: 16px;
     letter-spacing: 0.02em;
   }
 }
