@@ -1,0 +1,10 @@
+@keyframes pulse {
+  from {
+    box-shadow: 0 0 0 0px rgba(225, 130, 152, 0.6);
+    background-color: rgba(225, 130, 152, 0.6);
+  }
+  to {
+    box-shadow: 0 0 0 1000px rgba(225, 130, 152, 0);
+    background-color: rgba(225, 130, 152, 0);
+  }
+}
