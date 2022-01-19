@@ -10,9 +10,9 @@
 
   z-index: 1000;
 
-  @media screen and (max-width: 767px) {
-    display: none;
-  }
+  // @media screen and (max-width: 767px) {
+  //   display: none;
+  // }
 }
 
 .backdrop.is-hidden {
@@ -27,8 +27,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
 
-  min-width: 528px;
-  // min-height: 581px;
+  width: 85vw;
   padding: 70px 30px 30px 30px;
 
   border-radius: 5px;
@@ -37,20 +36,19 @@
   border-radius: 4px;
 
   z-index: 10001;
+
+  @media screen and (min-width: 680px) {
+    width: 528px;
+  }
 }
 
 .modal__icon-btn {
-  color: currentColor;
-  // fill: $gray;
-
   display: inline-block;
 
   width: 15px;
   height: 15px;
 
-  // &:hover {
-  //   fill: $accenthover;
-  // }
+  color: currentColor;
 }
 
 .modal__close-btn {
@@ -76,12 +74,6 @@
     fill: $accenthover;
   }
 }
-
-// .modal__close-btn > svg:hover {
-//   color: $accenthover;
-//   fill: $accenthover;
-//   border-color: $accenthover;
-// }
 
 .modal__btn {
   display: block;
