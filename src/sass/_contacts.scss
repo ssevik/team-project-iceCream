@@ -209,6 +209,8 @@
 }
 
 .drawing_btn--left {
+  min-width: 161px;
+
   padding: 0 10px;
 
   color: $primary;
@@ -220,23 +222,29 @@
 
   @media screen and (min-width: 768px) {
     padding: 0px 26px;
-    max-width: 191px;
+    min-width: 191px;
   }
 
   @media screen and (min-width: 1200px) {
     padding: 0px 30px;
-    max-width: 198px;
+    min-width: 198px;
   }
 }
 
 .drawing_btn--right {
+  min-width: 161px;
+
   padding: 0 28px;
 
   color: $accent;
   background-color: $primary;
 
+  @media screen and (min-width: 768px) {
+    min-width: 174px;
+  }
+
   @media screen and (min-width: 1200px) {
     padding: 0px 38px;
-    max-width: 180px;
+    min-width: 180px;
   }
 }

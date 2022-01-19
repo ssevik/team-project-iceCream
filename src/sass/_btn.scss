@@ -51,10 +51,11 @@
 
 .btn--white:link,
 .btn--white:visited {
-  padding: 15px 40px;
-  display: inline-block;
+  padding: 0 10px;
+  // padding: 15px 40px;
+  // display: inline-block;
   transition: all 0.2s;
-  position: absolute;
+  // position: absolute;
 }
 
 .btn--white:focus,
@@ -113,10 +114,11 @@
 
 .btn--red:link,
 .btn--red:visited {
-  padding: 15px 40px;
-  display: inline-block;
+  padding: 0 10px;
+  // padding: 15px 40px;
+  // display: inline-block;
   transition: all 0.2s;
-  position: absolute;
+  // position: absolute;
 }
 
 .btn--red:focus,
