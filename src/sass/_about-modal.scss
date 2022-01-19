@@ -41,17 +41,16 @@
 
 .modal__icon-btn {
   color: currentColor;
-  fill: $gray;
+  // fill: $gray;
 
   display: inline-block;
 
   width: 15px;
   height: 15px;
 
-  &:focus,
-  &:hover {
-    fill: $accenthover;
-  }
+  // &:hover {
+  //   fill: $accenthover;
+  // }
 }
 
 .modal__close-btn {
@@ -63,13 +62,26 @@
   justify-content: center;
   align-items: center;
 
-  border: 1px solid transparent;
-  background-color: transparent;
+  border: 2px solid $primary;
+  background-color: $secondary;
   border-radius: 50%;
 
   width: 25px;
   height: 25px;
+
+  transition: ease-in-out 250ms;
+
+  &:focus,
+  &:hover {
+    fill: $accenthover;
+  }
 }
+
+// .modal__close-btn > svg:hover {
+//   color: $accenthover;
+//   fill: $accenthover;
+//   border-color: $accenthover;
+// }
 
 .modal__btn {
   display: block;
