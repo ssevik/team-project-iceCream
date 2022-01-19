@@ -1,18 +1,22 @@
 .gallery {
   background-size: cover;
+
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-bottom: 80px;
-    background-image: linear-gradient(to bottom, #fff5f6 24%, #ffffff 24%);
+    background-image: linear-gradient(to bottom, $bg 24%, $primary 24%);
   }
+
   @media screen and (min-width: 768px) {
     padding-bottom: 121px;
-    background-image: linear-gradient(to bottom, #fff5f6 27.3%, #ffffff 27.3%);
+    background-image: linear-gradient(to bottom, $bg 27.3%, $primary 27.3%);
   }
+
   @media screen and (min-width: 1200px) {
     padding-bottom: 123px;
-    background-image: linear-gradient(to bottom, #fff5f6 31%, #ffffff 31%);
+    background-image: linear-gradient(to bottom, $bg 31%, $primary 31%);
   }
 }
-.gallery__item {
+
+.gallery__img {
   margin: 0 auto;
 }
