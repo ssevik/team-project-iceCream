@@ -1,0 +1,46 @@
+.btn__scroll-up {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  background-color: $accenthover;
+  fill: $mmLine;
+
+  padding: 5px;
+  border-radius: 50%;
+
+  z-index: 999;
+
+  @media screen and (min-width: 480px) {
+    width: 55px;
+    height: 55px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.btn__scroll-up:hover {
+  background-color: $mmLine;
+  fill: $accenthover;
+}
+
+.icon__scroll-up {
+  width: 20px;
+  height: 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 30px;
+    height: 30px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 50px;
+    height: 50px;
+  }
+}
