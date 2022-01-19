@@ -1,0 +1,31 @@
+<div class="backdrop is-hidden" data-modal>
+  <div class="modal modal__container">
+    <button id="btn" type="button" class="modal__close-btn" data-modal-close>
+      <svg id="svg" class="modal__icon-btn">
+        <use href="./images/sprite.svg#icon-x"></use>
+      </svg>
+    </button>
+    <form class="modal__form">
+      <input class="modal__name input" name="name" placeholder="Enter your name:" required />
+      <input
+        class="modal__email input"
+        name="emailaddress"
+        type="email"
+        placeholder="Enter your Email:"
+        required
+      />
+      <textarea
+        class="modal__message textarea"
+        name="subject"
+        placeholder="Enter your message:"
+        required
+      ></textarea>
+      <button class="modal__btn btn btn--white btn-white btn-animate" type="submit">
+        Send
+        <svg class="btn__svg">
+          <use href="./images/sprite.svg#arrow"></use>
+        </svg>
+      </button>
+    </form>
+  </div>
+</div>

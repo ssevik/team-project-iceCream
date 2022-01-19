@@ -57,9 +57,13 @@
   justify-content: center;
   width: 32px;
   height: 32px;
+
+  transition: ease-in-out 250ms;
+
   &:hover,
   &:focus {
     background-color: $accent;
+    transform: scale(1.3);
   }
 }
 .footer__contact {
