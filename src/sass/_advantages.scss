@@ -1,6 +1,6 @@
 .advantages {
-  background-color: #fff5f6;
   padding-bottom: 97px;
+  background-color: $bg;
 
   @media screen and (min-width: 768px) {
     padding-bottom: 140px;
@@ -42,12 +42,13 @@
 
 .advantages__numb {
   margin-bottom: 16px;
+
+  color: $accent;
   font-family: Titan One, cursive;
   font-size: 36px;
   line-height: 1.14;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-  color: $accent;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 13px;
@@ -123,10 +124,11 @@
 }
 
 .advantages__text {
+  color: $main;
+
   font-weight: 700;
   font-size: 12px;
   line-height: 1.67;
-  color: $main;
 
   @media screen and (min-width: 768px) {
     font-size: 14px;

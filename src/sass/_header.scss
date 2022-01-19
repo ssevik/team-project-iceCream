@@ -1,20 +1,18 @@
-// стилизация секции header
-
 .header {
+  padding-top: 6px;
+
   background-color: $lightPink;
 
   &__nav {
     display: flex;
     align-items: center;
 
-    @media screen and (min-width: 1200px) {
-      justify-content: space-between;
-    }
-
-    padding-top: 6px;
-
     @media screen and (min-width: 768px) {
       padding-top: 38px;
+    }
+
+    @media screen and (min-width: 1200px) {
+      justify-content: space-between;
     }
   }
 
@@ -38,9 +36,10 @@
     }
 
     &--link {
-      color: $primary;
       padding-top: 10px;
       padding-bottom: 10px;
+
+      color: $primary;
 
       &:hover,
       &:focus {
@@ -55,7 +54,6 @@
     &--btn {
       margin-left: auto;
       background-color: transparent;
-      // cursor: pointer;
 
       @media screen and (min-width: 768px) {
         margin-right: 30px;
@@ -88,6 +86,8 @@
 
 .hero {
   &__box {
+    position: relative;
+
     padding-top: 137px;
     padding-bottom: 160px;
 
@@ -100,21 +100,19 @@
       padding-top: 83px;
       padding-bottom: 56px;
     }
-
-    position: relative;
   }
 
   &__content {
     width: 218px;
 
     @media screen and (min-width: 768px) {
-      width: 162px;
       margin-bottom: 121px;
+      width: 162px;
     }
 
     @media screen and (min-width: 1200px) {
-      width: 277px;
       margin-bottom: 210px;
+      width: 277px;
     }
   }
 
@@ -148,6 +146,7 @@
     @media screen and (min-width: 1200px) {
       margin-bottom: 25px;
     }
+
     &--span {
       color: $accent;
       font-size: 48px;
@@ -193,17 +192,16 @@
       line-height: 1.25;
 
       @media screen and (min-width: 1200px) {
-        font-size: 14px;
         height: 40px;
+        font-size: 14px;
       }
     }
 
     &--products {
-      min-width: 104px;
+      min-width: 62px;
 
       background-color: $accent;
       color: $primary;
-      min-width: 62px;
 
       @media screen and (min-width: 1200px) {
         font-size: 14px;
@@ -215,14 +213,15 @@
         background-color: $accenthover;
       }
     }
+
     &--technology {
+      min-width: 82px;
       background-color: $primary;
       color: $accent;
-      min-width: 82px;
 
       @media screen and (min-width: 1200px) {
-        font-size: 14px;
         min-width: 138px;
+        font-size: 14px;
       }
 
       &:hover,
@@ -233,27 +232,33 @@
   }
 
   &__info {
+    margin-left: 120px;
+
     @media screen and (max-width: 767px) {
       display: none;
     }
-    margin-left: 120px;
 
     @media screen and (min-width: 1200px) {
       margin-left: 180px;
     }
 
+    &--details {
+      display: inline-block;
+    }
+
     &--summary {
-      cursor: pointer;
       list-style: none;
+      cursor: pointer;
     }
 
     &--summary::before {
       content: '';
-      background-image: url(../images/header+hero/arrow-right.png);
-      background-size: cover;
       display: block;
       width: 18px;
       height: 18px;
+
+      background-image: url(../images/header+hero/arrow-right.png);
+      background-size: cover;
 
       transition: ease-out 0.5s;
 
@@ -265,12 +270,13 @@
 
     &--details[open] &--summary::before {
       content: '';
-      background-image: url(../images/header+hero/arrow-right.png);
-      background-size: cover;
-      transform: rotate(-90deg);
       display: block;
       width: 18px;
       height: 18px;
+
+      background-image: url(../images/header+hero/arrow-right.png);
+      background-size: cover;
+      transform: rotate(-90deg);
 
       transition: ease-out 0.5s;
 
@@ -281,19 +287,22 @@
     }
 
     &--details[open] &--content {
-      transform: translate(0, -73px);
+      position: absolute;
       width: 107px;
+
+      color: $primary;
+
       font-weight: 400;
       font-size: 8px;
       line-height: 1.5;
       letter-spacing: 0;
-      color: $primary;
-      position: absolute;
+
+      transform: translate(0, -73px);
 
       @media screen and (min-width: 1200px) {
-        transform: translate(0, -124px);
         width: 200px;
         font-size: 14px;
+        transform: translate(0, -124px);
       }
     }
 
@@ -313,18 +322,20 @@
   &__statistics {
     @media screen and (max-width: 767px) {
       display: none;
+
       &--summary {
-        cursor: pointer;
         list-style: none;
+        cursor: pointer;
       }
 
       &--summary::before {
         content: '';
-        background-image: url(../images/header+hero/arrow-right.png);
-        background-size: cover;
         display: block;
         width: 18px;
         height: 18px;
+
+        background-image: url(../images/header+hero/arrow-right.png);
+        background-size: cover;
 
         transition: ease-out 0.5s;
 
@@ -336,12 +347,13 @@
 
       &--details[open] &--summary::before {
         content: '';
-        background-image: url(../images/header+hero/arrow-right.png);
-        background-size: cover;
-        transform: rotate(-90deg);
         display: block;
         width: 18px;
         height: 18px;
+
+        background-image: url(../images/header+hero/arrow-right.png);
+        background-size: cover;
+        transform: rotate(-90deg);
 
         transition: ease-out 0.5s;
 
@@ -352,14 +364,17 @@
       }
 
       &--details[open] &--content {
-        transform: translate(0, -73px);
+        position: absolute;
         width: 107px;
+
+        color: $primary;
+
         font-weight: 400;
         font-size: 8px;
         line-height: 1.5;
         letter-spacing: 0;
-        color: $primary;
-        position: absolute;
+
+        transform: translate(0, -73px);
 
         @media screen and (min-width: 1200px) {
           transform: translate(0, -124px);
@@ -417,27 +432,33 @@
       &::before {
         content: '';
         display: block;
-        width: 16px;
-        height: 16px;
-        border-radius: 50%;
-        background-color: $primary;
         position: absolute;
         top: -3px;
         right: -10px;
 
+        width: 16px;
+        height: 16px;
+
+        border-radius: 50%;
+        background-color: $primary;
+
         @media screen and (min-width: 1200px) {
-          width: 30px;
-          height: 30px;
           top: -8px;
           left: 66px;
+
+          width: 30px;
+          height: 30px;
         }
 
         z-index: -1;
       }
     }
+
     &--span {
-      font-family: 'Titan One', cursive;
+      display: block;
       color: $accent;
+
+      font-family: 'Titan One', cursive;
       font-size: 28px;
       line-height: 1.14;
 
