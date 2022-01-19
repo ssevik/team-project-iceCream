@@ -3,16 +3,25 @@
     padding-bottom: 86px;
     background-color: $primary;
   }
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 119px;
+  }
+
   @media screen and (min-width: 1200px) {
-    padding-bottom: 123px;
+    padding-bottom: 132px;
     background-color: $primary;
   }
 }
 .reviews__content {
+}
+
+.reviews__body {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .reviews__img {
   @media screen and (min-width: 320px) and (max-width: 767px) {
     padding-bottom: 29px;
@@ -128,4 +137,31 @@
   line-height: calc(37 / 20);
   text-align: center;
   color: $main;
+}
+
+.swiper {
+  padding-bottom: 30px;
+
+  @media screen and (min-width: 768px) {
+    padding-bottom: 40px;
+  }
+}
+
+.swiper-pagination {
+  bottom: -7px;
+}
+
+.swiper-pagination-bullet {
+  width: 14px;
+  height: 14px;
+
+  background-color: $bullet;
+}
+
+.swiper-pagination-bullet-active {
+  background-image: url(../images/gallery/home.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 12px 12px;
+  background-color: transparent;
 }

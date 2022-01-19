@@ -10,6 +10,8 @@
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Titan+One&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   </head>
   <body>
@@ -18,7 +20,6 @@
     <include src="./partials/about-modal.html"></include>
 
     <include src="./partials/form.html"></include>
-
 
     <include src="./partials/header.html"></include>
 
@@ -47,6 +48,17 @@
 
     <script src="./scroll-anchor.js"></script>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+
+    <script>
+      var swiper = new Swiper('.mySwiper', {
+        pagination: {
+          el: '.swiper-pagination',
+
+          clickable: true,
+        },
+      });
+    </script>
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./aos.js"></script>
