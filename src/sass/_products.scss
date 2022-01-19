@@ -1,10 +1,12 @@
 .products-section {
   padding-top: 121px;
   padding-bottom: 98px;
+
   @media screen and (min-width: 768px) {
     padding-top: 127px;
     padding-bottom: 112px;
   }
+
   @media screen and (min-width: 1200px) {
     padding-top: 122px;
     padding-bottom: 119px;
@@ -12,15 +14,14 @@
 }
 
 .products-subtitle {
-  text-align: center;
-
   margin-bottom: 15px;
+  text-align: center;
 }
 
 .products-title {
+  margin-bottom: 144px;
   text-align: center;
 
-  margin-bottom: 144px;
   @media screen and (min-width: 768px) {
     margin-bottom: 150px;
   }
@@ -30,9 +31,10 @@
 }
 
 .products-list {
-  max-width: 280px;
   margin-left: auto;
   margin-right: auto;
+  max-width: 280px;
+
   @media screen and (min-width: 768px) {
     display: flex;
     max-width: 700px;
@@ -43,13 +45,16 @@
 }
 
 .products-list__item {
-  border-radius: 24px;
+  position: relative;
   padding: 161px 40px 41px 40px;
   margin-bottom: 130px;
-  position: relative;
+
+  border-radius: 24px;
+
   &:last-child {
     margin-bottom: 0;
   }
+
   @media screen and (min-width: 768px) {
     padding: 152px 11px 40px 11px;
     margin-bottom: 0;
@@ -58,6 +63,7 @@
       margin-right: 0;
     }
   }
+
   @media screen and (min-width: 1200px) {
     padding: 163px 44px 50px 44px;
     margin-right: 25px;
@@ -95,15 +101,19 @@
   margin-bottom: 30px;
   &::after {
     content: '';
+    margin-top: 30px;
+
     width: 100%;
     height: 6px;
     background: url(../images/products/points.png) no-repeat center center;
-    margin-top: 30px;
   }
+
   @media screen and (min-width: 1200px) {
+    margin-bottom: 32px;
+
     font-size: 30px;
     line-height: 1.13;
-    margin-bottom: 32px;
+
     &::after {
       margin-top: 32px;
     }
@@ -242,7 +252,7 @@
     display: block;
     margin: 0 auto;
 
-    transition: ease-out;
+    transition: ease-out 2s;
   }
 }
 

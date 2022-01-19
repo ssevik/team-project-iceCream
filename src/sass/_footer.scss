@@ -1,16 +1,5 @@
 .footer {
-  position: relative;
-  padding-bottom: 25px;
-
   background-color: $bg;
-
-  @media screen and (min-width: 768px) {
-    padding-bottom: 18px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    padding-bottom: 10px;
-  }
 }
 
 .footer-section {
@@ -106,43 +95,33 @@
   letter-spacing: 0.01em;
 }
 
-.footer__privacy-item {
+.footer__privacy {
+  padding-top: 22px;
+  padding-bottom: 25px;
+
+  border-top: 1px solid $gray;
+
+  @media screen and (min-width: 768px) {
+    padding-top: 29px;
+    padding-bottom: 18px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+}
+
+.footer__privacy-text {
+  color: $third;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
   text-align: center;
-  color: $third;
 
-  @media screen and (min-width: 768px) {
-    &:not(:last-child) {
-      margin-right: 3px;
+  span {
+    @media screen and (max-width: 767px) {
+      display: block;
     }
-  }
-}
-
-.footer__privacy::before {
-  content: '';
-  display: block;
-  position: absolute;
-  right: 0;
-  left: 0;
-  bottom: 89px;
-
-  height: 1px;
-  background-color: $gray;
-
-  @media screen and (min-width: 768px) {
-    bottom: 73px;
-  }
-
-  @media screen and (min-width: 1200px) {
-    bottom: 45px;
-  }
-}
-
-.footer__privacy {
-  @media screen and (min-width: 768px) {
-    display: flex;
-    justify-content: center;
   }
 }
