@@ -56,22 +56,33 @@
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./aos.js"></script>
     <script>
-      window.onscroll = function () {
-        scrollFunction();
-      };
+      (function () {
+        'use strict';
 
-      function scrollFunction() {
-        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-          document.getElementById('js-myBtn').style.display = 'block';
-        } else {
-          document.getElementById('js-myBtn').style.display = 'none';
+        function trackScroll() {
+          var scrolled = window.pageYOffset;
+          var coords = document.documentElement.clientHeight;
+
+          if (scrolled > coords) {
+            goTopBtn.classList.add('back_to_top-show');
+          }
+          if (scrolled < coords) {
+            goTopBtn.classList.remove('back_to_top-show');
+          }
         }
-      }
 
-      function topFunction() {
-        document.body.scrollTop = 0;
-        document.documentElement.scrollTop = 0;
-      }
+        function backToTop() {
+          if (window.pageYOffset > 0) {
+            window.scrollBy(0, -80);
+            setTimeout(backToTop, 0);
+          }
+        }
+
+        var goTopBtn = document.querySelector('.back_to_top');
+
+        window.addEventListener('scroll', trackScroll);
+        goTopBtn.addEventListener('click', backToTop);
+      })();
     </script>
   </body>
 </html>
