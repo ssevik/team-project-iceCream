@@ -1,1 +1,0 @@
-{"version":3,"sources":["aos.js"],"names":["AOS","init"],"mappings":";AAIAA,IAAIC","file":"aos.a0f97cdb.js","sourceRoot":"../src","sourcesContent":["\n// import '../node_modules/aos/dist/aos.css';\n//  import AOS from 'aos';\n\nAOS.init();"]}
