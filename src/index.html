@@ -17,6 +17,9 @@
   <body>
     <include src="./partials/header.html"></include>
 
+
+    <include src="./partials/main-modal.html"></include>
+
     <main>
       <include src="./partials/menu.html"></include>
 
@@ -26,7 +29,13 @@
 
       <include src="./partials/advantages.html"></include>
 
+
+    <include src="./partials/btn-back-to-top.html"></include>
+
+    <!-- Скрипт идёт последним в разметке. В нём уже подключен главный SASS-файл. -->
+
       <include src="./partials/gallery.html"></include>
+
 
       <include src="./partials/reviews.html"></include>
 
@@ -68,5 +77,23 @@
 
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="./aos.js"></script>
+    <script>
+      window.onscroll = function () {
+        scrollFunction();
+      };
+
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          document.getElementById('js-myBtn').style.display = 'block';
+        } else {
+          document.getElementById('js-myBtn').style.display = 'none';
+        }
+      }
+
+      function topFunction() {
+        document.body.scrollTop = 0;
+        document.documentElement.scrollTop = 0;
+      }
+    </script>
   </body>
 </html>
