@@ -9,11 +9,9 @@ body {
   line-height: 1.785;
   letter-spacing: 0.04em;
 
-  // scroll-behavior: smooth;
-}
-
-body.modal-open {
-  overflow: hidden;
+  &.modal-open {
+    overflow: hidden;
+  }
 }
 
 .container {
