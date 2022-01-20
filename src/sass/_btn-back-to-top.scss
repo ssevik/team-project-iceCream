@@ -1,4 +1,4 @@
-.btn__scroll-up {
+.back_to_top {
   position: fixed;
   bottom: 20px;
   right: 20px;
@@ -13,6 +13,7 @@
   border-radius: 50%;
 
   z-index: 999;
+  display: none;
 
   @media screen and (min-width: 480px) {
     width: 55px;
@@ -25,9 +26,13 @@
   }
 }
 
-.btn__scroll-up:hover {
+.back_to_top:hover {
   background-color: $mmLine;
   fill: $accenthover;
+}
+
+.back_to_top-show {
+  display: block;
 }
 
 .icon__scroll-up {
