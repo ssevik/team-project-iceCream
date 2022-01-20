@@ -23,11 +23,11 @@
     width: 70px;
     height: 70px;
   }
-}
 
-.btn__scroll-up:hover {
-  background-color: $mmLine;
-  fill: $accenthover;
+  &:hover {
+    background-color: $mmLine;
+    fill: $accenthover;
+  }
 }
 
 .icon__scroll-up {
