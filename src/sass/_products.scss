@@ -252,7 +252,7 @@
     display: block;
     margin: 0 auto;
 
-    transition: ease-out 2s;
+    transition: ease-out 0.5s;
   }
 }
 
@@ -265,7 +265,7 @@
   background: url('../images/products/arrow-right.png') no-repeat center center;
   transform: rotate(-90deg);
 
-  transition: ease-out 2s;
+  transition: ease-out 0.5s;
 }
 
 .products-list__details[open] .products-list__wrapper {

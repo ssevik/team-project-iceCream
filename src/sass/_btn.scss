@@ -28,9 +28,6 @@
   }
 }
 
-// !Белая кнопка, красная тень(серый бэкграунд). ВНИМАТЕЛЬНО СМОТРИТЕ font-size.
-// ! btn--white btn-white btn-animate
-
 .btn--white {
   position: relative;
 
@@ -52,10 +49,7 @@
 .btn--white:link,
 .btn--white:visited {
   padding: 0 10px;
-  // padding: 15px 40px;
-  // display: inline-block;
   transition: all 0.2s;
-  // position: absolute;
 }
 
 .btn--white:focus,
@@ -91,9 +85,6 @@
   opacity: 0;
 }
 
-// !Красная кнопка, белый текст.(ховер: белая заливка, красный текст)
-// ! btn--red btn-red btn-animate
-
 .btn--red {
   position: relative;
 
@@ -115,10 +106,7 @@
 .btn--red:link,
 .btn--red:visited {
   padding: 0 10px;
-  // padding: 15px 40px;
-  // display: inline-block;
   transition: all 0.2s;
-  // position: absolute;
 }
 
 .btn--red:focus,

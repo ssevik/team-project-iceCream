@@ -15,7 +15,13 @@
   }
 }
 
-.contact_item {
+.contact__bg {
+  background-image: url(../images/contacts-bg.png);
+  background-repeat: no-repeat;
+  background-position: center 30%;
+}
+
+.contact__item {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -31,7 +37,7 @@
   }
 }
 
-.contacts_list {
+.contacts__list {
   max-width: 220px;
 
   padding-top: 43px;
@@ -95,7 +101,7 @@
   background-color: $green;
 }
 
-.tabel_list {
+.tabel__list {
   padding-top: 25px;
   padding-bottom: 25px;
   &:not(:last-child) {
@@ -113,74 +119,88 @@
   }
 }
 
-.tabel_title {
+.tabel__title {
   margin-bottom: 10px;
+
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $main;
 
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.85, 0.04em);
   }
+
   @media screen and (min-width: 1200px) {
     @include font-contact(500, 16px, 1.87, 0.04em);
   }
 }
 
-.tabel_title--city {
+.tabel__title--city {
   display: inline-block;
   margin-bottom: 10px;
+
   @media screen and (min-width: 768px) {
     margin-bottom: 14px;
   }
+
   @media screen and (min-width: 1200px) {
     margin-bottom: 10px;
   }
 }
-.tabel_text {
+
+.tabel__text {
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $third;
 
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.64, 0.04em);
   }
+
   @media screen and (min-width: 1200px) {
     @include font-contact(500, 16px, 1.81, 0.04em);
   }
 }
-.tabel_title--day {
+
+.tabel__title--day {
   display: block;
   margin-top: 10px;
-  @include font-contact(500, 12px, 1.37, 0.04em);
   color: $main;
+  @include font-contact(500, 12px, 1.37, 0.04em);
 
   @media screen and (min-width: 768px) {
     margin-top: 16px;
     @include font-contact(500, 14px, 1.85, 0.04em);
   }
+
   @media screen and (min-width: 1200px) {
     @include font-contact(500, 16px, 1.87, 0.04em);
   }
 }
-.tabel_text--time {
-  @include font-contact(500, 12px, 1.37, 0.04em);
+
+.tabel__text--time {
   color: $secondary;
+  @include font-contact(500, 12px, 1.37, 0.04em);
+
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.85, 0.04em);
   }
+
   @media screen and (min-width: 1200px) {
     @include font-contact(500, 16px, 1.87, 0.04em);
   }
 }
-.tabel_address {
+
+.tabel__address {
   @include font-contact(500, 12px, 1.37, 0.04em);
   color: $third;
   @media screen and (min-width: 768px) {
     @include font-contact(500, 14px, 1.64, 0.04em);
   }
+
   @media screen and (min-width: 1200px) {
     @include font-contact(500, 16px, 1.81, 0.04em);
   }
 }
+
 .drawing {
   display: flex;
   flex-direction: column;
@@ -201,13 +221,14 @@
   }
 }
 
-.drawing_btn {
+.drawing__btn {
   max-width: 161px;
   height: 44px;
   @include font-contact(bold, 16px, 1.31, 0.04em);
   border: none;
   border-radius: 22px;
   cursor: pointer;
+
   @media screen and (min-width: 768px) {
     padding-left: 30px;
     padding-right: 30px;
@@ -222,7 +243,7 @@
   }
 }
 
-.drawing_btn--left {
+.drawing__btn--left {
   min-width: 161px;
 
   padding: 0 10px;
@@ -245,7 +266,7 @@
   }
 }
 
-.drawing_btn--right {
+.drawing__btn--right {
   min-width: 161px;
 
   padding: 0 28px;

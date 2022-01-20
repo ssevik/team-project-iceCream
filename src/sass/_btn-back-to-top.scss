@@ -24,11 +24,11 @@
     width: 70px;
     height: 70px;
   }
-}
 
-.back_to_top:hover {
-  background-color: $mmLine;
-  fill: $accenthover;
+  &:hover {
+    background-color: $mmLine;
+    fill: $accenthover;
+  }
 }
 
 .back_to_top-show {
